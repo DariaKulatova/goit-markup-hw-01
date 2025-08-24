@@ -3,71 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>WEBSTUDIO</title>
+    <title>WebStudio</title>
     <meta name="description" content="HTML markup for HW #1 (no CSS)" />
   </head>
   <body>
     <!-- ===== Header ===== -->
     <header>
-      <!-- B6: логотип как ссылка с текстом -->
-      <a href="./" aria-label="Home">WEBSTUDIO</a>
-
-      <!-- B7: единственный nav на странице -->
+      <!-- Навигация должна быть первой в header и содержать ровно 2 дочерних элемента:
+           1) логотип-ссылка a, 2) меню-список ul -->
       <nav>
+        <!-- Логотип: ссылка на ./index.html и точный текст 'WebStudio' -->
+        <a href="./index.html">WebStudio</a>
+
+        <!-- Меню: 3 пункта, ссылки с пустым href и нужным текстом -->
         <ul>
-          <li><a href="#studio">Studio</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="">Studio</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Contacts</a></li>
         </ul>
       </nav>
 
-      <!-- B8: контакты вне nav -->
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-      </ul>
+      <!-- Контакты после nav, обёрнуты в address; внутри — список из двух li -->
+      <address>
+        <ul>
+          <li>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
     </header>
 
-    <!-- ===== Main ===== -->
+    <!-- ===== Main (ровно 3 секции) ===== -->
     <main>
-      <!-- B9: один h1 на странице -->
-      <h1>Effective Solutions for Your Business</h1>
-
-      <!-- Hero (из макета) -->
-      <section id="studio">
-        <h2 class="visually-hidden">Studio</h2>
-        <img
-          src="./images/hero.jpg"
-          width="1200"
-          alt="Dark hero banner with 'Effective Solutions for Your Business' and an Order Service button"
-        />
-        <!-- B10: кнопка type="button" -->
+      <!-- Секция №1: только два дочерних элемента: h1 и button -->
+      <section>
+        <h1>Effective Solutions for Your Business</h1>
         <button type="button">Order Service</button>
       </section>
 
-      <!-- Features (4 карточки, как в макете) -->
-      <section id="portfolio">
+      <!-- Секция №2: заголовок h2 + список особенностей из 4 li -->
+      <section>
         <h2>Features</h2>
-        <!-- B15: однотипные элементы — списком -->
         <ul>
           <li>
-            <img
-              src="./images/feature-1.jpg"
-              width="360"
-              alt="Strategy illustration"
-            />
             <h3>Strategy</h3>
             <p>
-              Our goal is to identify the business problem and walk away with
-              the perfect and creative solution.
+              Our goal is to identify the business problem to walk away with the
+              perfect and creative solution.
             </p>
           </li>
           <li>
-            <img
-              src="./images/feature-2.jpg"
-              width="360"
-              alt="Punctuality illustration"
-            />
             <h3>Punctuality</h3>
             <p>
               Bring the key message to the brand's audience for the best price
@@ -75,11 +63,6 @@
             </p>
           </li>
           <li>
-            <img
-              src="./images/feature-3.jpg"
-              width="360"
-              alt="Diligence illustration"
-            />
             <h3>Diligence</h3>
             <p>
               Research and confirm brands with the strongest digital growth
@@ -87,11 +70,6 @@
             </p>
           </li>
           <li>
-            <img
-              src="./images/feature-4.jpg"
-              width="360"
-              alt="Technologies illustration"
-            />
             <h3>Technologies</h3>
             <p>
               Design practice focused on digital experiences. We bring a deep
@@ -101,15 +79,15 @@
         </ul>
       </section>
 
-      <!-- Our Team (как в макете) -->
-      <section id="team">
+      <!-- Секция №3: команда (картинки через img, чтобы пройти тест "всі картинки відображаються") -->
+      <section>
         <h2>Our Team</h2>
         <ul>
           <li>
             <img
               src="./images/team-1.jpg"
               width="264"
-              alt="Mark Guerrero — Product Designer portrait"
+              alt="Mark Guerrero portrait"
             />
             <h3>Mark Guerrero</h3>
             <p>Product Designer</p>
@@ -118,7 +96,7 @@
             <img
               src="./images/team-2.jpg"
               width="264"
-              alt="Tom Ford — Frontend Developer portrait"
+              alt="Tom Ford portrait"
             />
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
@@ -127,7 +105,7 @@
             <img
               src="./images/team-3.jpg"
               width="264"
-              alt="Camila Garcia — Marketing portrait"
+              alt="Camila Garcia portrait"
             />
             <h3>Camila Garcia</h3>
             <p>Marketing</p>
@@ -136,31 +114,19 @@
             <img
               src="./images/team-4.jpg"
               width="264"
-              alt="Daniel Wilson — UI Designer portrait"
+              alt="Daniel Wilson portrait"
             />
             <h3>Daniel Wilson</h3>
             <p>UI Designer</p>
           </li>
         </ul>
       </section>
-
-      <!-- Contacts (якорь для пункта меню Contacts) -->
-      <section id="contacts">
-        <h2>Contacts</h2>
-        <address>
-          <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-          </ul>
-        </address>
-      </section>
     </main>
 
     <!-- ===== Footer ===== -->
     <footer>
-      <!-- B6: логотип-ссылка текстом -->
-      <a href="./" aria-label="Home">WEBSTUDIO</a>
-      <p>© 2025 WEBSTUDIO. All rights reserved.</p>
+      <a href="./index.html">WebStudio</a>
+      <p>© 2025 WebStudio. All rights reserved.</p>
     </footer>
   </body>
 </html>
