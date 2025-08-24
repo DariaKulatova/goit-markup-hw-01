@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WEBSTUDIO</title>
+    <meta name="description" content="HTML markup for HW #1 (no CSS)" />
+  </head>
+  <body>
+    <!-- ===== Header ===== -->
+    <header>
+      <!-- B6: логотип как ссылка с текстом -->
+      <a href="./" aria-label="Home">WEBSTUDIO</a>
+
+      <!-- B7: единственный nav на странице -->
+      <nav>
+        <ul>
+          <li><a href="#studio">Studio</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <!-- B8: контакты вне nav -->
+      <ul>
+        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      </ul>
+    </header>
+
+    <!-- ===== Main ===== -->
+    <main>
+      <!-- B9: один h1 на странице -->
+      <h1>Effective Solutions for Your Business</h1>
+
+      <!-- Hero (из макета) -->
+      <section id="studio">
+        <img
+          src="./images/hero.jpg"
+          width="1200"
+          alt="Dark hero banner with 'Effective Solutions for Your Business' and an Order Service button"
+        />
+        <!-- B10: кнопка type="button" -->
+        <button type="button">Order Service</button>
+      </section>
+
+      <!-- Features (4 карточки, как в макете) -->
+      <section id="portfolio">
+        <h2>Features</h2>
+        <!-- B15: однотипные элементы — списком -->
+        <ul>
+          <li>
+            <img
+              src="./images/feature-1.jpg"
+              width="360"
+              alt="Strategy illustration"
+            />
+            <h3>Strategy</h3>
+            <p>
+              Our goal is to identify the business problem and walk away with
+              the perfect and creative solution.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./images/feature-2.jpg"
+              width="360"
+              alt="Punctuality illustration"
+            />
+            <h3>Punctuality</h3>
+            <p>
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./images/feature-3.jpg"
+              width="360"
+              alt="Diligence illustration"
+            />
+            <h3>Diligence</h3>
+            <p>
+              Research and confirm brands with the strongest digital growth
+              opportunities and minimize risk.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./images/feature-4.jpg"
+              width="360"
+              alt="Technologies illustration"
+            />
+            <h3>Technologies</h3>
+            <p>
+              Design practice focused on digital experiences. We bring a deep
+              passion for problem-solving.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Our Team (как в макете) -->
+      <section id="team">
+        <h2>Our Team</h2>
+        <ul>
+          <li>
+            <img
+              src="./images/team-1.jpg"
+              width="264"
+              alt="Mark Guerrero — Product Designer portrait"
+            />
+            <h3>Mark Guerrero</h3>
+            <p>Product Designer</p>
+          </li>
+          <li>
+            <img
+              src="./images/team-2.jpg"
+              width="264"
+              alt="Tom Ford — Frontend Developer portrait"
+            />
+            <h3>Tom Ford</h3>
+            <p>Frontend Developer</p>
+          </li>
+          <li>
+            <img
+              src="./images/team-3.jpg"
+              width="264"
+              alt="Camila Garcia — Marketing portrait"
+            />
+            <h3>Camila Garcia</h3>
+            <p>Marketing</p>
+          </li>
+          <li>
+            <img
+              src="./images/team-4.jpg"
+              width="264"
+              alt="Daniel Wilson — UI Designer portrait"
+            />
+            <h3>Daniel Wilson</h3>
+            <p>UI Designer</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contacts (якорь для пункта меню Contacts) -->
+      <section id="contacts">
+        <h2>Contacts</h2>
+        <address>
+          <ul>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          </ul>
+        </address>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <!-- B6: логотип-ссылка текстом -->
+      <a href="./" aria-label="Home">WEBSTUDIO</a>
+      <p>© 2025 WEBSTUDIO. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
